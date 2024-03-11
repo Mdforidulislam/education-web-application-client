@@ -4,7 +4,7 @@ function App() {
 
   return (
     <>
-      educational applicatio
+      educational application
     </>
   )
 }
