@@ -18,7 +18,7 @@ const Register = () => {
     };
     return (
         <div className="relative w-full min-h-svh overflow-hidden ">
-        <div className="absolute w-full h-full top-0 left-0 ">
+        <div className=" ">
         <div className="flex flex-col justify-center items-center ">
             <h1 className="text-4xl font-bold">Sign Up</h1>
             <form onSubmit={handleSubmit(onSubmit)} className='mt-10 mb-5 '>
@@ -65,7 +65,7 @@ const Register = () => {
                     </div>
                 </div>
                 <div className=''>
-                    <p>New Here?Please <Link to={'/signup'}><span className='text-xl font-bold text-green-500 '>Sign Up</span></Link></p>
+                    <p>New Here?Please <Link to={'/LogIn'}><span className='text-xl font-bold text-green-500 '>Sign In</span></Link></p>
                 </div>
              
         </div>

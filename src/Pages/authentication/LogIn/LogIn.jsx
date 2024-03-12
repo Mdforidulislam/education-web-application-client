@@ -1,6 +1,8 @@
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import "./LogIn.css"
+// image
+import boy from '../../../assets/boy-with-world-rbg.png'
 
 // icon 
 import { SiAmazonsimpleemailservice } from "react-icons/si";
@@ -17,8 +19,15 @@ const LogIn = () => {
     };
 
     return (
-       <div className="relative w-full min-h-svh overflow-hidden ">
-        <div className="absolute w-full h-full top-0 left-0 ">
+       <div className="relative  w-full min-h-svh overflow-hidden  ">
+        <div className="absolute w-[2000px] h-[2000px] bg-[#4481eb] -z-10 rounded-full -top-[10%] right-[48%] -translate-y-[60%]"> </div>
+        <div className="absolute md:text-3xl md:font-bold  font-bold px-10 py-20"> Transformative Education <br /> Innovations for a <br /> Global Future </div>
+
+        <div className=" ">
+        <div className="md:flex justify-center items-center ">
+            <div className="">
+                <img className="w-1/2 mx-auto md:w-full" src={boy} alt="boy" />
+            </div>
         <div className="flex flex-col justify-center items-center ">
             <h1 className="text-4xl font-bold">Sign In</h1>
             <form onSubmit={handleSubmit(onSubmit)} className='mt-10 mb-5 '>
@@ -26,7 +35,7 @@ const LogIn = () => {
                         <div className="flex justify-center items-center gap-4 max-w-96 w-full h-[80px] px-10  bg-slate-400 rounded-full text-center ">
                             <SiAmazonsimpleemailservice className=" text-3xl text-white"/>
                         <input className='w-full rounded-xl placeholder:text-slate-500 placeholder:font-medium  py-3 px-4 leading-6 text-lg font-medium' placeholder="Enter Your Email" {...register("email", { required: true })} type="email" id="" />
-                        {errors.email && <span className='text-red-600'>This field is required</span>}
+                        {errors.email && <span className='text-red-600'>Enter Your Email Here</span>}
                         </div>
 
                     </div>
@@ -50,9 +59,10 @@ const LogIn = () => {
                     </div>
                 </div>
                 <div className='font-semibold'>
-                    <p>New Here?Please <Link to={'/signup'}><span className='text-xl font-bold text-slate-700 '>Sign Up</span></Link></p>
+                    <p>New Here?Please <Link to={'/signUp'}><span className='text-xl font-bold text-slate-700 '>Sign Up</span></Link></p>
                 </div>
              
+        </div>
         </div>
         </div>
        </div>
