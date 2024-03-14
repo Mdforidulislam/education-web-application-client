@@ -7,7 +7,7 @@ const Footer = () => {
           <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
             <div className="flex justify-center ">
               <h1 className="text-4xl font-sans text-gray-700">
-                Our <span className="text-red-400">School</span>
+                Edu<span className="text-[#3D5EE1]">Care</span>
               </h1>
             </div>
 
@@ -19,7 +19,7 @@ const Footer = () => {
             <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-orange-600"
+                  className="text-gray-700 transition hover:text-[#3D5EE1]"
                   href="#!"
                 >
                   {" "}
@@ -29,7 +29,7 @@ const Footer = () => {
 
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-orange-600"
+                  className="text-gray-700 transition hover:text-[#3D5EE1]"
                   href="#!"
                 >
                   {" "}
@@ -39,7 +39,7 @@ const Footer = () => {
 
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-orange-600"
+                  className="text-gray-700 transition hover:text-[#3D5EE1]"
                   href="#!"
                 >
                   {" "}
@@ -49,7 +49,7 @@ const Footer = () => {
 
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-orange-600"
+                  className="text-gray-700 transition hover:text-[#3D5EE1]"
                   href="#!"
                 >
                   {" "}
@@ -59,7 +59,7 @@ const Footer = () => {
 
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-orange-600"
+                  className="text-gray-700 transition hover:text-[#3D5EE1]"
                   href="#!"
                 >
                   {" "}
@@ -74,7 +74,7 @@ const Footer = () => {
                   href="#!"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:text-orange-600"
+                  className="text-gray-700 transition hover:text-[#3D5EE1]"
                 >
                   <span className="sr-only">Facebook</span>
                   <svg
@@ -97,7 +97,7 @@ const Footer = () => {
                   href="#!"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:text-orange-600"
+                  className="text-gray-700 transition hover:text-[#3D5EE1]"
                 >
                   <span className="sr-only">Instagram</span>
                   <svg
@@ -120,7 +120,7 @@ const Footer = () => {
                   href="#!"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:text-orange-600"
+                  className="text-gray-700 transition hover:text-[#3D5EE1]"
                 >
                   <span className="sr-only">Twitter</span>
                   <svg
@@ -139,7 +139,7 @@ const Footer = () => {
                   href="#!"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:text-orange-600"
+                  className="text-gray-700 transition hover:text-[#3D5EE1]"
                 >
                   <span className="sr-only">GitHub</span>
                   <svg
@@ -162,9 +162,9 @@ const Footer = () => {
                   href="#!"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:text-orange-600"
+                  className="text-gray-700 transition hover:text-[#3D5EE1]"
                 >
-                  <span className="sr-only">Dribbble</span>
+                  <span className="sr-only">Dribble</span>
                   <svg
                     className="h-6 w-6"
                     fill="currentColor"

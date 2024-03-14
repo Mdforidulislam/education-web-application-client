@@ -1,4 +1,4 @@
-import React from "react";
+import { GrNotification } from "react-icons/gr";
 import { NavLink } from "react-router-dom";
 const links = (
   <>
@@ -17,6 +17,8 @@ const links = (
     <NavLink>
       <button className="text-xl flex items-center gap-2">Log In</button>
     </NavLink>
+    <GrNotification className="text-2xl text-[#3D5EE1] cursor-pointer"/>
+    {/*notification div color #C5D5E1 */}
     <NavLink>
       <img
         className="w-12 h-12 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
@@ -30,13 +32,13 @@ const links = (
 const Nav = () => {
   return (
     <div>
-      <div className="bg-opacity-40 shadow py-2">
+      <div className="bg-opacity-40 shadow py-3">
         <div className="flex justify-between max-w-screen-xl items-center mx-auto">
           {/* Logo */}
           <div className="text-xl flex items-center">
             <img className="w-16" src="" alt="Logo" />{" "}
             <h3 className="hidden md:flex font-semibold">
-              Our<span className="text-red-400">School</span>
+              Edu<span className="text-[#3D5EE1]">Care</span>
             </h3>
           </div>
           {/* Routes */}
