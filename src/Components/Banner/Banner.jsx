@@ -6,7 +6,7 @@ const Banner = () => {
           <div className="flex justify-between items-center">
             <div className="md:w-1/2 text-center md:text-left mx-auto">
               <h1 className="font-bebas-neue uppercase text-5xl sm:text-6xl font-black flex leading-none text-white ">
-                Unlock Your Potential
+                Best Online Platform for education
               </h1>
               <p className="text-sm sm:text-xl text-white">
                 Explore Limitless Learning Opportunities with EduCare.

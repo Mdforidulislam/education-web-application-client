@@ -25,19 +25,19 @@ const Nav = () => {
 
   const links = (
     <>
-      <NavLink>
+      <NavLink to={'/'}>
         <button className="text-xl ">Home</button>
       </NavLink>
-      <NavLink>
-        <button className="text-xl ">About Us</button>
+      <NavLink to={'/about'}>
+        <button className="text-xl ">About</button>
       </NavLink>
-      <NavLink>
-        <button className="text-xl ">Contact Us</button>
+      <NavLink to={'/contact'}>
+        <button className="text-xl ">Contact</button>
       </NavLink>
-      <NavLink>
+      <NavLink to={'/register'}>
         <button className="text-xl flex items-center gap-2">Sign Up</button>
       </NavLink>
-      <NavLink>
+      <NavLink to={'/login'}>
         <button className="text-xl flex items-center gap-2">Log In</button>
       </NavLink>
       <GrNotification className="text-2xl text-[#3D5EE1] cursor-pointer" />
@@ -58,7 +58,6 @@ const Nav = () => {
         <div className="flex justify-between max-w-screen-xl items-center mx-auto">
           {/* Logo */}
           <div className="text-xl flex items-center">
-            <img className="w-16" src="" alt="Logo" />{" "}
             <h3 className="hidden md:flex font-semibold">
               Edu<span className="text-[#3D5EE1]">Care</span>
             </h3>

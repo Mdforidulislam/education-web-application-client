@@ -3,7 +3,7 @@
 const Footer = () => {
     return (
         <div className="m">
-            <footer className="bg-gray-100">
+            <footer className="">
           <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
             <div className="flex justify-center ">
               <h1 className="text-4xl font-sans text-gray-700">
