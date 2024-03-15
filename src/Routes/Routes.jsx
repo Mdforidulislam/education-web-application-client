@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../Layout/Root/MainLayout";
 import Home from "../Components/Home/Home";
+import AdminDashboard from "../Dashboard/AdminDashboard";
+import AdminProfile from "../Dashboard/AdminProfile/AdminProfile";
 import ErrorPage from "../Layout/Root/ErrorElement/ErrorPage";
 import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
@@ -17,6 +19,7 @@ const Router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
+      
       {
         path: "/about",
         element: <About />,
@@ -24,7 +27,20 @@ const Router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
-      },
+      }
+    ],
+  },
+
+  {
+    path: '/dashboard',
+    element: <AdminDashboard></AdminDashboard>,     
+    children: [
+     
+      {
+        path: 'adminProfile',
+        element: <AdminProfile></AdminProfile>,
+
+      }
     ],
   },
   {
@@ -35,6 +51,8 @@ const Router = createBrowserRouter([
     path: "/register",
     element: <Register />,
   },
+
+  
 ]);
 
 export default Router;
