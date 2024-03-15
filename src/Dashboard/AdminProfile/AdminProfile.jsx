@@ -60,7 +60,7 @@ const AdminProfile = () => {
                             />
                             <div className="absolute inset-y-0 right-0 flex items-center">
                                 <label htmlFor="currency" className="sr-only">
-                                    Currency
+                                  no
                                 </label>
                                
                             </div>
