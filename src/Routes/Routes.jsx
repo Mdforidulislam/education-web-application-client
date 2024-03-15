@@ -2,7 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../Layout/Root/MainLayout";
 import Erropage from "../Layout/Root/ErrorElement/Erropage";
 import Home from "../Components/Home/Home";
-import Dashboard from "../Dashboard/Dashboard";
+import AdminDashboard from "../Dashboard/AdminDashboard";
+import AdminProfile from "../Dashboard/AdminProfile/AdminProfile";
 
 const Router = createBrowserRouter([
   {
@@ -19,14 +20,14 @@ const Router = createBrowserRouter([
 
   {
     path: '/dashboard',
-    element: <Dashboard></Dashboard>,     
+    element: <AdminDashboard></AdminDashboard>,     
     children: [
      
-      // {
-      //   path: 'profile',
-      //   element: <adminProfile></adminProfile>,
+      {
+        path: 'adminProfile',
+        element: <AdminProfile></AdminProfile>,
 
-      // },
+      },
 
       
     ],
