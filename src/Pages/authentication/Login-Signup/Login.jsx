@@ -37,7 +37,7 @@ const LogIn = () => {
                     <div className='text-center mb-5 '>
                         <div className="flex justify-center items-center gap-4 max-w-96 w-full h-[80px] px-10  bg-slate-400 rounded-full text-center ">
                             <SiAmazonsimpleemailservice className=" text-3xl text-white"/>
-                        <input className='w-full rounded-xl placeholder:text-slate-500 placeholder:font-medium  py-3 px-4 leading-6 text-lg font-medium' placeholder="Enter Your Email" {...register("email", { required: true })} type="email" id="" />
+                        <input {...register("email", { required: true })} type="email" id="" />
                         {errors.email && <span className='text-red-600'>Enter Your Email Here</span>}
                         </div>
 
