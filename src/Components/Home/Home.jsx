@@ -1,9 +1,11 @@
-import React from 'react';
+import Contact from '../../Pages/Contact/Contact';
+import Banner from '../Banner/Banner';
 
 const Home = () => {
     return (
-        <div>
-            This is home 
+        <div className=''>
+            <Banner></Banner>
+            <Contact></Contact>
         </div>
     );
 };

@@ -1,14 +1,14 @@
-import React from 'react';
+
 import { Outlet } from 'react-router-dom';
 import Nav from '../../Components/Navbar/Nav';
-import Fotter from '../../Components/Fotter/Fotter';
+import Footer from '../../Components/Footer/Footer';
 
 const MainLayout = () => {
     return (
         <div>
           <Nav/>
           <Outlet/>  
-          <Fotter/>
+          <Footer/>
         </div>
     );
 };

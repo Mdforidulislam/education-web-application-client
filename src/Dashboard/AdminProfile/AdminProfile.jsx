@@ -21,31 +21,62 @@ const AdminProfile = () => {
     console.log(profiles)
 
     return (
-        <div className='flex justify-center items-center gap-2'>
-            <div className="w-[50%]">
-                <div className="w-[90%] md:w-[40%] mx-auto py-24">
-                    {/* Heading Admin Profile */}
-                    <h1 className="text-5xl font-extrabold leading-snug"></h1>
-                    {/* Description Admin Profile */}
-                    <h3 className="py-6 text-xl">
+        <div className='flex justify-center items-center gap-2 mt-20'>
+            <div className="w-[30%] m-2 ">
+                    <div className=" w-full ">
                        
-                    </h3>
-                    {/* Admin member */}
-                    <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 py-10">
                         {profiles.map((profile, idx) => (
-                            <div className="bg-white p-8 text-center rounded-3xl shadow-2xl" key={idx}>
+                            <div className="bg-white p-8 text-center w-full rounded-3xl shadow-2xl" key={idx}>
+                                <h1>Admin profile</h1>
                                 <img className="w-[150px] h-[150px] mx-auto rounded-full border " src={profile.img} alt="" />
                                 <h2 className="text-3xl font-bold pt-4">{profile.userName}</h2>
+                                <h2 className="text-3xl font-bold pt-4">{profile.email}</h2>
                                 
                             </div>
                         ))}
                     </div>
-                </div>
+                
             </div>
 
-            <div className='w-[50%]'>
-                <h1>hgk</h1>
+            <div className='w-[70%]'>
                 
+                <div className="bg-white p-8  w-full rounded-3xl shadow-2xl">
+                    
+                    <h1>Edit Details</h1>
+                    <div>
+                        <label htmlFor="price" className="block text-sm font-medium leading-6 text-gray-900">
+                            Price
+                        </label>
+                        <div className="relative mt-2 rounded-md shadow-sm">
+                            <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                                <span className="text-gray-500 sm:text-sm">$</span>
+                            </div>
+                            <input
+                                type="text"
+                                name="price"
+                                id="price"
+                                className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                placeholder="0.00"
+                            />
+                            <div className="absolute inset-y-0 right-0 flex items-center">
+                                <label htmlFor="currency" className="sr-only">
+                                    Currency
+                                </label>
+                                <select
+                                    id="currency"
+                                    name="currency"
+                                    className="h-full rounded-md border-0 bg-transparent py-0 pl-2 pr-7 text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+                                >
+                                    <option>USD</option>
+                                    <option>CAD</option>
+                                    <option>EUR</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                 
+
+                </div>
             </div>
             
         </div>
