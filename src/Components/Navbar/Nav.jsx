@@ -26,34 +26,34 @@ const Nav = () => {
   const links = (
     <>
       <NavLink to={'/'}>
-        <button className="text-xl ">Home</button>
+        <button className="text-xl  hover:text-gray-400 ">Home</button>
       </NavLink>
       <NavLink to={'/about'}>
-        <button className="text-xl ">About</button>
+        <button className="text-xl  hover:text-gray-400 ">About</button>
       </NavLink>
       <NavLink to={'/contact'}>
-        <button className="text-xl ">Contact</button>
+        <button className="text-xl  hover:text-gray-400 ">Contact</button>
       </NavLink>
       <NavLink to={'/register'}>
-        <button className="text-xl flex items-center gap-2">Sign Up</button>
+        <button className="text-xl  hover:text-gray-400 flex items-center gap-2">Sign Up</button>
       </NavLink>
       <NavLink to={'/login'}>
-        <button className="text-xl flex items-center gap-2">Log In</button>
+        <button className="text-xl  hover:text-gray-400 flex items-center gap-2">Log In</button>
       </NavLink>
-      <GrNotification className="text-2xl text-[#3D5EE1] cursor-pointer" />
-      <NavLink>
+      <GrNotification className="text-2xl hover:text-[#3D5EE1] cursor-pointer" />
+
         <img
           onClick={() => setDropDownOpen(!dropDownOpen)}
-          className="w-12 h-12 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+          className="w-12 h-12 p-1 rounded-full ring-2 ring-gray-300 cursor-pointer dark:ring-gray-500"
           src="https://i.ibb.co/nLQ8Nnc/3177440.png"
           alt="Bordered avatar"
         />
-      </NavLink>
+
     </>
   );
 
   return (
-    <div>
+    <div className="fixed z-40 w-full text-white bg-black bg-opacity-30">
       <div className="bg-opacity-40 shadow py-3">
         <div className="flex justify-between max-w-screen-xl items-center mx-auto">
           {/* Logo */}
@@ -67,7 +67,7 @@ const Nav = () => {
         </div>
       </div>
       {
-        dropDownOpen ? <div className="absolute right-0 z-10 bg-[#C5D5E1] w-[120px] md:w-[150px]">
+        dropDownOpen ? <div className="absolute right-0 z-50 bg-[#C5D5E1] w-[120px] md:w-[150px]">
         {dropDownLinks}
       </div>: ''
       }

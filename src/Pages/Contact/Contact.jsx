@@ -1,6 +1,11 @@
+import SectionBanner from "../../Components/SectionBanner/SectionBanner";
+
+
 const Contact = () => {
   return (
-    <div className="py-10">
+    <div>
+      <SectionBanner headLine={"Contact Us"} text={"We'd like to hear from you"}></SectionBanner>
+      <div className="my-16">
       <h3 className="text-5xl text-center font-semibold text-gray-6 mb-16">
         How can we help you?
       </h3>
@@ -45,6 +50,7 @@ const Contact = () => {
       <button className="uppercase mx-auto flex justify-center mt-10 py-2 px-4 rounded-sm bg-[#3D5EE1] border-2 border-transparent text-white text-md hover:bg-[#3c5bd4]">
         Send Message
       </button>
+      </div>
     </div>
   );
 };

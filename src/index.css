@@ -5,3 +5,9 @@
 body{
     background-color: #FFFFFF;
 }
+
+.background-image {
+    background-image: url('https://i.postimg.cc/nrrTFN5S/assortment-teacher-s-day-elements.jpg');
+    background-size: cover;
+    background-position: center;
+  }

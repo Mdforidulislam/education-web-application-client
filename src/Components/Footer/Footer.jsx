@@ -2,16 +2,16 @@
 
 const Footer = () => {
     return (
-        <div className="m">
-            <footer className="">
+        <div className="">
+            <footer className="bg-[#FFFFFF] text-gray-700 border-t-2">
           <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
             <div className="flex justify-center ">
-              <h1 className="text-4xl font-sans text-gray-700">
+              <h1 className="text-4xl font-sans ">
                 Edu<span className="text-[#3D5EE1]">Care</span>
               </h1>
             </div>
 
-            <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
+            <p className="mx-auto mt-6 max-w-md text-center leading-relaxed ">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
               consequuntur amet culpa cum itaque neque.
             </p>
@@ -19,7 +19,7 @@ const Footer = () => {
             <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-[#3D5EE1]"
+                  className=" transition hover:text-[#3D5EE1]"
                   href="#!"
                 >
                   {" "}
@@ -29,7 +29,7 @@ const Footer = () => {
 
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-[#3D5EE1]"
+                  className="transition hover:text-[#3D5EE1]"
                   href="#!"
                 >
                   {" "}
@@ -39,7 +39,7 @@ const Footer = () => {
 
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-[#3D5EE1]"
+                  className=" transition hover:text-[#3D5EE1]"
                   href="#!"
                 >
                   {" "}
@@ -49,7 +49,7 @@ const Footer = () => {
 
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-[#3D5EE1]"
+                  className=" transition hover:text-[#3D5EE1]"
                   href="#!"
                 >
                   {" "}
@@ -59,7 +59,7 @@ const Footer = () => {
 
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-[#3D5EE1]"
+                  className=" transition hover:text-[#3D5EE1]"
                   href="#!"
                 >
                   {" "}
@@ -74,7 +74,7 @@ const Footer = () => {
                   href="#!"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:text-[#3D5EE1]"
+                  className=" transition hover:text-[#3D5EE1]"
                 >
                   <span className="sr-only">Facebook</span>
                   <svg
@@ -97,7 +97,7 @@ const Footer = () => {
                   href="#!"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:text-[#3D5EE1]"
+                  className=" transition hover:text-[#3D5EE1]"
                 >
                   <span className="sr-only">Instagram</span>
                   <svg
@@ -120,7 +120,7 @@ const Footer = () => {
                   href="#!"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:text-[#3D5EE1]"
+                  className=" transition hover:text-[#3D5EE1]"
                 >
                   <span className="sr-only">Twitter</span>
                   <svg
@@ -139,7 +139,7 @@ const Footer = () => {
                   href="#!"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:text-[#3D5EE1]"
+                  className=" transition hover:text-[#3D5EE1]"
                 >
                   <span className="sr-only">GitHub</span>
                   <svg
@@ -162,7 +162,7 @@ const Footer = () => {
                   href="#!"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-gray-700 transition hover:text-[#3D5EE1]"
+                  className=" transition hover:text-[#3D5EE1]"
                 >
                   <span className="sr-only">Dribble</span>
                   <svg
