@@ -5,6 +5,12 @@ import Home from "../Components/Home/Home";
 
 import SignUp from "../Pages/authentication/Login-Signup/SignUp";
 import LogIn from './../Pages/LogIn/LogIn';
+// import StuDashboard from "../Dashboard/StudentDashboard/StuDashboard";
+// import MyDashboard from './../Dashboard/StudentDashboard/MyDashborad/MyDashboard';
+import MyCourses from "../Dashboard/StudentDashboard/MyCourse/MyCourses";
+import MyClass from "../Dashboard/StudentDashboard/MyClass/MyClass";
+import StuDashboard from './../Dashboard/StudentDashboard/StuDashboard';
+import MyDashboard from "../Dashboard/StudentDashboard/MyDashborad/MyDashboard";
 
 
 const Router = createBrowserRouter([
@@ -27,6 +33,24 @@ const Router = createBrowserRouter([
       },
     ],
   },
+  {
+    path:"/studentDashboard",
+    element: <StuDashboard/>,
+    children: [
+      {
+      path:"MyDashboard",
+      element:<MyDashboard/>
+    },
+    {
+      path:"MyCourses",
+      element: <MyCourses/>
+    },
+    {
+      path:"MyClasses",
+      element: <MyClass/>
+    },
+  ]
+  }
 ]);
 
 export default Router;

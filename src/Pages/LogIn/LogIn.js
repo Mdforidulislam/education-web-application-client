@@ -12,4 +12,4 @@ const LoginSlide = () => {
 //   wrapper.classList.add("active");
 // };
 
-export { signupSlide, LoginSlide };
+export default { signupSlide, LoginSlide };
